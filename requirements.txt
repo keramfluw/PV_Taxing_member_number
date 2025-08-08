@@ -1,0 +1,5 @@
+# Keine externen Abhängigkeiten erforderlich
+# Bei Bedarf erweitern:
+# streamlit
+# pandas
+# numpy
