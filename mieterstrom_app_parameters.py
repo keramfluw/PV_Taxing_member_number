@@ -135,8 +135,6 @@ if __name__ == "__main__":
 
 # Mieterstrom Projekt
 
-Dieses Repository enthält eine Python-Basisklasse zur Modellierung der technischen und wirtschaftlichen Parameter eines Mieterstromprojekts.
-
 ## Nutzung
 ```bash
 python app/mieterstrom_app_parameters.py
