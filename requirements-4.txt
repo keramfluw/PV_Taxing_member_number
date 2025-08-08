@@ -1,0 +1,7 @@
+# Requirements for mieterstrom_app_parameters.py
+# (No external libraries required for base functionality)
+
+# Add below if extended with Streamlit or financial libraries
+# streamlit
+# numpy
+# pandas
