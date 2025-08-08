@@ -129,7 +129,7 @@ if __name__ == "__main__":
 # Datei: .gitignore
 # =============================
 
-``pycache
+
 *.pyc
 .env
 
