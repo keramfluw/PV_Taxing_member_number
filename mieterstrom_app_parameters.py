@@ -1,3 +1,14 @@
+### Projektstruktur
+# mieterstrom-projekt/
+# ├── app/
+# │   └── mieterstrom_app_parameters.py
+# ├── requirements.txt
+# ├── .gitignore
+# └── README.md
+
+# =============================
+# Datei: app/mieterstrom_app_parameters.py
+# =============================
 
 class AnlagenParameter:
     def __init__(self, anlagengroesse_kwp, spezifischer_ertrag_kwh_kwp, eigenverbrauch_anteil,
@@ -92,7 +103,6 @@ class Sensitivitaet:
 
 
 if __name__ == "__main__":
-    # Beispielinitialisierung
     anlage = AnlagenParameter(100, 950, 0.6, 0.4, 0.95, 25)
     capex = Investitionskosten(70000, 10000, 5000, 15000, 3000, 5000, 2000)
     opex = Betriebskosten(1000, 500, 800, 1200, 300, 600, 400)
@@ -104,3 +114,45 @@ if __name__ == "__main__":
     print(f"Gesamtkosten (CAPEX): {capex.gesamt():,.2f} €")
     print(f"Gesamte Betriebskosten (jährlich): {opex.gesamt_jaehrlich():,.2f} €")
     print(f"Gesamte Einnahmen (jährlich): {einnahmen.gesamt_jaehrlich():,.2f} €")
+
+# =============================
+# Datei: requirements.txt
+# =============================
+
+# Keine externen Abhängigkeiten erforderlich
+# Bei Bedarf erweitern:
+# streamlit
+# pandas
+# numpy
+
+# =============================
+# Datei: .gitignore
+# =============================
+
+__pycache__/
+*.pyc
+.env
+
+# =============================
+# Datei: README.md
+# =============================
+
+# Mieterstrom Projekt
+
+Dieses Repository enthält eine Python-Basisklasse zur Modellierung der technischen und wirtschaftlichen Parameter eines Mieterstromprojekts.
+
+## Nutzung
+```bash
+python app/mieterstrom_app_parameters.py
+```
+
+## Ordnerstruktur
+- `app/`: Enthält die Hauptlogik
+- `requirements.txt`: Paketabhängigkeiten
+- `.gitignore`: Ignorierte Dateien
+- `README.md`: Diese Projektbeschreibung
+
+## Erweiterungsideen
+- Integration mit Streamlit zur GUI
+- Finanzanalyse (IRR, LCOE, NPV)
+- Exportfunktionen (Excel, PDF)
