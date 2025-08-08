@@ -114,39 +114,3 @@ if __name__ == "__main__":
     print(f"Gesamtkosten (CAPEX): {capex.gesamt():,.2f} €")
     print(f"Gesamte Betriebskosten (jährlich): {opex.gesamt_jaehrlich():,.2f} €")
     print(f"Gesamte Einnahmen (jährlich): {einnahmen.gesamt_jaehrlich():,.2f} €")
-
-# =============================
-# Datei: requirements.txt
-# =============================
-
-# Keine externen Abhängigkeiten erforderlich
-# Bei Bedarf erweitern:
-# streamlit
-# pandas
-# numpy
-
-# =============================
-# Datei: .gitignore
-# =============================
-
-# =============================
-# Datei: README.md
-# =============================
-
-# Mieterstrom Projekt
-
-## Nutzung
-```bash
-python app/mieterstrom_app_parameters.py
-```
-
-## Ordnerstruktur
-- `app/`: Enthält die Hauptlogik
-- `requirements.txt`: Paketabhängigkeiten
-- `.gitignore`: Ignorierte Dateien
-- `README.md`: Diese Projektbeschreibung
-
-## Erweiterungsideen
-- Integration mit Streamlit zur GUI
-- Finanzanalyse (IRR, LCOE, NPV)
-- Exportfunktionen (Excel, PDF)
